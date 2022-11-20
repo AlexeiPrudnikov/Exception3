@@ -24,7 +24,7 @@ public class SaveService {
                 writer.write("Фамилия;Имя;Отчество;Дата рождения;Пол;Номертелефона" + "\n");
                 writer.write(person.toString() + "\n");
             }
-        } catch (IOException e){
+        } catch (IOException e) {
             throw new IOException("Ошибка записи данных о человеке в файл");
         } finally {
             writer.close();

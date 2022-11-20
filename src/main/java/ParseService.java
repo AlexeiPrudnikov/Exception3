@@ -17,11 +17,11 @@ public class ParseService {
             throw new RuntimeException("Invalid date format");
         }
     }
-    private static String getPhone(String phoneNumber) throws PhoneNumberFormatException{
+
+    private static String getPhone(String phoneNumber) throws PhoneNumberFormatException {
         if (Pattern.matches("89[0-9]{9}", phoneNumber)) {
             return phoneNumber;
-        }
-        else {
+        } else {
             throw new PhoneNumberFormatException();
         }
     }

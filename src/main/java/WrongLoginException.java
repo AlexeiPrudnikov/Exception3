@@ -4,6 +4,7 @@ public class WrongLoginException extends Exception {
     public WrongLoginException() {
         super(MESSAGE);
     }
+
     public WrongLoginException(String message) {
         super(message);
     }
